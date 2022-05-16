@@ -13,6 +13,7 @@ export const Subtitle: React.FC = () => {
 				position: 'absolute',
 				bottom: 140,
 				width: '100%',
+				color: 'white',
 				opacity,
 			}}
 		>

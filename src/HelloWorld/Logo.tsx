@@ -44,7 +44,7 @@ export const Logo: React.FC<{
 			},
 		}),
 		[0, 1],
-		[0, -150]
+		[0, -400]
 	);
 
 	const scale = frame < 50 ? scaleIn : 1;

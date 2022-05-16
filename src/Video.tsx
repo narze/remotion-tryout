@@ -1,8 +1,10 @@
 import {Composition} from 'remotion';
 import {HelloWorld} from './HelloWorld';
+import {HelloWorld2} from './HelloWorld2';
 import {Logo} from './HelloWorld/Logo';
 import {Subtitle} from './HelloWorld/Subtitle';
 import {Title} from './HelloWorld/Title';
+import {CreditRoll} from './CreditRoll';
 
 export const RemotionVideo: React.FC = () => {
 	return (
@@ -10,13 +12,37 @@ export const RemotionVideo: React.FC = () => {
 			<Composition
 				id="HelloWorld"
 				component={HelloWorld}
-				durationInFrames={150}
-				fps={30}
+				durationInFrames={300}
+				fps={60}
 				width={1920}
 				height={1080}
 				defaultProps={{
 					titleText: 'Welcome to Remotion',
-					titleColor: 'black',
+					titleColor: 'white',
+				}}
+			/>
+			<Composition
+				id="CreditRoll"
+				component={CreditRoll}
+				durationInFrames={60 * 40}
+				fps={60}
+				width={1920}
+				height={1080}
+				defaultProps={{
+					titleText: 'Welcome to Remotion',
+					titleColor: 'white',
+				}}
+			/>
+			<Composition
+				id="HelloWorld2"
+				component={HelloWorld2}
+				durationInFrames={100}
+				fps={60}
+				width={1920}
+				height={1080}
+				defaultProps={{
+					titleText: 'Welcome to Remotion',
+					titleColor: 'white',
 				}}
 			/>
 			<Composition
@@ -31,12 +57,12 @@ export const RemotionVideo: React.FC = () => {
 				id="Title"
 				component={Title}
 				durationInFrames={100}
-				fps={30}
+				fps={60}
 				width={1920}
 				height={1080}
 				defaultProps={{
 					titleText: 'Welcome to Remotion',
-					titleColor: 'black',
+					titleColor: 'white',
 				}}
 			/>
 			<Composition
